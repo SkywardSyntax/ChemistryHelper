@@ -8,5 +8,5 @@ It should still be of use to everyone taking chemistry in HS.
 
 ***IMPORTANT INFORMATION***
 
-The Q&A program requires you to have an OPEN-AI API Key, more instructions on how to obtain 1 will be shown when you run the program
+The Q&A program requires you to have an OPEN-AI API Key, more instructions on how to obtain one will be shown when you run the program
 
