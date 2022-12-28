@@ -32,3 +32,4 @@ with open("Output.txt", 'w') as file:
   file.close()
 with open('Output.txt', 'r') as f:
     print(f.read())
+    f.close()
