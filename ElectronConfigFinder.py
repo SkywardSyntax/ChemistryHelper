@@ -1,6 +1,7 @@
 def main():
     """Main function."""
     # Get input
+    xyza=0
     input_type = input("Enter 'e' for electron configuration or 'n' for element name: ")
     if input_type == "e":
         input_value = input("Enter the electron configuration: ")
