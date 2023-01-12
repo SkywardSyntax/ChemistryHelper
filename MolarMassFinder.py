@@ -14,7 +14,7 @@ def findListIndex(list, value):
     for i in range(len(list)):
         if list[i] == value:
             return i
-    return -1
+    exit("Error: Element not found.")
 def clearConsole(number):
     print("\n"*number)
 def repeatProgram(total,attempt):
