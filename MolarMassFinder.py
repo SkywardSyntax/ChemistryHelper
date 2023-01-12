@@ -22,22 +22,22 @@ def repeatProgram(total,attempt):
     if attempt == (1):
         usrInput1 = input("Enter the element you want to find the molar mass of: ")
         calculation = MolarMass[findListIndex(TableOfElements, usrInput1)]
-        usrInput2 = input("Enter the amount of " + usrInput1 + " you have: ")
+        usrInput2 = input("Enter the number of moles of " + usrInput1 + " you have: ")
         final = (int(usrInput2) * float(calculation))
         total +=final
-        print("The molar mass of "+ str(usrInput1) + "is " +bcolors.OKCYAN+str(final) +bcolors.RESETALL+ " g/mol")
+        print("The molar mass of "+ str(usrInput2)+(" ")+ str(usrInput1) + " is " +bcolors.OKCYAN+str(final) +bcolors.RESETALL+ " g/mol")
         x = 0
         repeatProgram(total,2)
     else:
-        usrInput = input("Are there more elements you want to add to the calculation? (y/n): ")
+        usrInput = input("Are there more elements you wish to add to the calculation? (y/n): ")
         if usrInput == "y":
             while(z<1):
                 usrInput1 = input("Enter the element you want to find the molar mass of: ")
                 calculation = MolarMass[findListIndex(TableOfElements, usrInput1)]
-                usrInput2 = input("Enter the number of atoms of the element: ")
+                usrInput2 = input("Enter the number of moles of " + usrInput1 + " you have: ")
                 final = (int(usrInput2)*float(calculation))
                 total += final
-                print("The molar mass of " + usrInput1 + " is " + bcolors.OKCYAN+str(final) + bcolors.RESETALL+" g/mol")
+                print("The molar mass of " +str(usrInput)+" "+usrInput1 + " is " + bcolors.OKCYAN+str(final) + bcolors.RESETALL+" g/mol")
                 repeatProgram(total,2)
         else:
             clearConsole(15)
