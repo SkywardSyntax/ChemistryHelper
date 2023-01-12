@@ -12,7 +12,7 @@ openai.api_key = (my_secret)
 response_output = ("")
 response = openai.Completion.create(
   model="text-davinci-002",
-  prompt=input("Please Enter Your Chemistry Doubt: "),
+  prompt=input("Please Enter Your Chemistry Question: "),
   temperature=1,
   max_tokens=4000,
   top_p=1,
@@ -32,3 +32,4 @@ with open("Output.txt", 'w') as file:
   file.close()
 with open('Output.txt', 'r') as f:
     print(f.read())
+    f.close()
