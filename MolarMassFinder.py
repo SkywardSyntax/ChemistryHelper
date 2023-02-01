@@ -22,10 +22,17 @@ def repeatProgram(total,attempt):
     if attempt == (1):
         usrInput1 = input("Enter the element you want to find the molar mass of: ")
         calculation = MolarMass[findListIndex(TableOfElements, usrInput1)]
+<<<<<<< Updated upstream
         usrInput2 = input("Enter the number of moles of " + usrInput1 + " you have: ")
         final = (int(usrInput2) * float(calculation))
         total +=final
         print("The molar mass of "+ str(usrInput2)+(" ")+ str(usrInput1) + " is " +bcolors.OKCYAN+str(final) +bcolors.RESETALL+ " g/mol")
+=======
+        usrInput2 = input("How many moles of " + usrInput1 + " do you have: ")
+        final = (int(usrInput2) * float(calculation))
+        total +=final
+        print("The molar mass of "+ str(usrInput1) + " is " +bcolors.OKCYAN+str(final) +bcolors.RESETALL+ " g/mol")
+>>>>>>> Stashed changes
         x = 0
         repeatProgram(total,2)
     else:
