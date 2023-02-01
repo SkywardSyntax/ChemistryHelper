@@ -3,7 +3,7 @@
 ***INTRO***
 
 This program is designed to help students taking Adv. Chemistry, in 10th Grade in Texas. 
-The program is specifically designed for the syllabus of Westwood High School in AUstin, Texas, 
+The program is specifically designed for the syllabus of Westwood High School in Austin, Texas, 
 It should still be of use to everyone taking chemistry in HS.
 
 ***IMPORTANT INFORMATION***

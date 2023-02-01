@@ -19,7 +19,8 @@ periodic_trends = ("The periodic trends are the trends that occur in the periodi
 atomic_radius = ("Atomic radius is the distance from the center of an atom to the outermost electron. The trend is that the atomic radius decreases as you go down a group and increases as you go across a period.")
 ionization_energy = ("Ionization energy is the energy required to remove an electron from an atom. The trend is that the ionization energy increases as you go down a group and decreases as you go across a period.")
 electronegativity = ("Electronegativity is the ability of an atom to attract electrons. The trend is that the electronegativity increases as you go up a group and decreases as you go right along the periodic table.")
-userQuestion = input("What would you like to know about chemistry?\n1.) Avogadro's number\n2.) Molar mass\n3.) Periodic trends\n4.) Atomic radius\n5.) Ionization energy\n6.) Electronegativity\n")
+soluteVsSolvent = ("A solute is the substance that is dissolved in a solvent. A solvent is the substance that dissolves the solute.")
+userQuestion = input("What would you like to know about chemistry?\n1.) Avogadro's number\n2.) Molar mass\n3.) Periodic trends\n4.) Atomic radius\n5.) Ionization energy\n6.) Electronegativity\nSolute vs. Solvent\n")
 if userQuestion == "1":
     print(bcolors.OKGREEN + avogadro + bcolors.RESETALL)
 elif userQuestion == "2":
