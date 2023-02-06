@@ -4,10 +4,10 @@ def getFileContents(filename, output):
     with open(filename, 'r') as f:
         output = f.read()
     return output
-log = open("Output.txt", "r")
+log = open("Config Files/Output.txt", "r")
 lines = ""
 liney = ""
-my_secret = getFileContents("key.txt", liney)
+my_secret = getFileContents("Config Files/key.txt", liney)
 openai.api_key = (my_secret)
 response_output = ("")
 response = openai.Completion.create(
@@ -21,15 +21,15 @@ response = openai.Completion.create(
 )
 (response_output) = str(response)
 text = response['choices'][0]['text']
-with open("Output.txt", "r") as file1:
+with open("Config Files/Output.txt", "r") as file1:
   line = file1.readlines()
   file1.close
-with open("Output.txt", 'w') as file:
+with open("Config Files/Output.txt", 'w') as file:
   file.write(str(text))
   for number, line in enumerate(lines):
       if number not in [4, 7]:
        file.write(line)
   file.close()
-with open('Output.txt', 'r') as f:
+with open('Config Files/Output.txt', 'r') as f:
     print(f.read())
     f.close()
