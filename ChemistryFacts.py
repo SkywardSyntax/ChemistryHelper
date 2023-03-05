@@ -13,7 +13,7 @@ class bcolors:
     magenta = '\033[35m'
     UNDERLINE = '\033[4m'
     RESETALL = '\033[0m'
-avog adro = ("Avogadro's number is the number of particles in one mole of a substance. It is 6.02214179 x 10^23 particles/mol.")
+avogadro = ("Avogadro's number is the number of particles in one mole of a substance. It is 6.02214179 x 10^23 particles/mol.")
 molar_mass = ("The molar mass of a substance is the mass of one mole of that substance. It is measured in grams per mole (g/mol).")
 periodic_trends = ("The periodic trends are the trends that occur in the periodic table. They are the trends in atomic radius, ionization energy, electronegativity, and atomic mass.")
 atomic_radius = ("Atomic radius is the distance from the center of an atom to the outermost electron. The trend is that the atomic radius decreases as you go down a group and increases as you go across a period.")
