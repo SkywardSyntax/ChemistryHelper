@@ -17,7 +17,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install openai
-        pip install os
         pip install time
 
     - name: Compile Python files
