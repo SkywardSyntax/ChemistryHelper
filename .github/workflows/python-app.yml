@@ -21,19 +21,27 @@ jobs:
     - name: Compile Python files
       run: |
         set -e
+        mkdir -p build
         for file in $(find . -name '*.py'); do
-          python -m py_compile $file || true
+          python -W error -m py_compile $file 2>&1 | tee -a build/py_warnings.log
         done
 
     - name: Check for errors
       run: |
         set -e
-        if grep -Rl '^SyntaxError' .; then
-          echo "There are syntax errors in some Python files."
+        if grep -Rl '^SyntaxError\|IndentationError' build/py_warnings.log; then
+          echo "There are syntax or indentation errors in some Python files."
           exit 1
         fi
 
-    - name: Ignore Warnings
+    - name: Check for warnings
       run: |
         set -e
-        echo "All Python files compiled successfully without errors."
+        if grep -Rl '^Warning' build/py_warnings.log; then
+          echo "There are warnings in some Python files."
+        fi
+        
+    - name: Success
+      run: |
+        set -e
+        echo "All Python files compiled successfully without errors or warnings."
