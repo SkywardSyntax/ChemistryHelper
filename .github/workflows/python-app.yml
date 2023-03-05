@@ -15,7 +15,10 @@ jobs:
         python-version: 3.9
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: |
+        pip install openai
+        pip install os
+        pip install time
 
     - name: Compile Python files
       run: |
